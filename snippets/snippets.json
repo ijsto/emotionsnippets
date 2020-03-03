@@ -13,8 +13,8 @@
   "Declare emotion styled component": {
     "prefix": "styledcomp",
     "body": [
-      "const StyledComp$0 = styled.div`",
-      "\t$1;",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
+      "\t$2;",
       "`"
     ],
     "description": "Declare styled component"
@@ -22,7 +22,7 @@
   "Wrapped custom component in a styled component": {
     "prefix": "styledwrapcomp",
     "body": [
-      "const StyledComp$0 = styled(CustomComp$1)`",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$2)`",
       "\t$3;",
       "`"
     ],
