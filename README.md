@@ -127,6 +127,12 @@ const stc| = styled(CustomComp|)`
 
 ## Release Notes
 
+## [1.1.1] - 2020 March 4rd
+
+### Fixes
+
+- `ecn →` | Fix typo to properly close ClassNames element
+
 ## [1.1.0] - 2020 March 4rd
 
 ### Changed

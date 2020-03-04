@@ -44,7 +44,7 @@
     "body": [
       "<ClassNames>",
       "\t{({ cx, css }) => ($1)}",
-      "</ClassNames"
+      "</ClassNames>"
     ],
     "description": "Creates ClassNames HOC with render props"
   },
