@@ -1,16 +1,16 @@
 {
   "Import ClassNames": {
-    "prefix": "eimpclnm",
+    "prefix": "eicn",
     "body": ["import { ClassNames } from '@emotion/core';"],
     "description": "Import ClassNames from @emotion/core"
   },
   "Import { css }": {
-    "prefix": "eimpcss",
+    "prefix": "eicss",
     "body": ["import { css } from '@emotion/core';"],
     "description": "Import css from @emotion/core"
   },
   "Import jsx prop": {
-    "prefix": "eimpjsx",
+    "prefix": "eij",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -20,7 +20,7 @@
     "description": "Imports emotion jsx prop"
   },
   "Import jsx with css props": {
-    "prefix": "eimpjsxcss",
+    "prefix": "eijcss",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -30,17 +30,17 @@
     "description": "Imports emotion jsx and css props"
   },
   "Import styled from emotion": {
-    "prefix": "eimpstyled",
+    "prefix": "eistc",
     "body": ["import styled from '@emotion/styled';"],
     "description": "Import styled from emotion"
   },
   "Import { useTheme }": {
-    "prefix": "eimpusetheme",
+    "prefix": "eiusthm",
     "body": ["import { useTheme } from 'emotion-theming';"],
     "description": "Import useTheme emotion-theming"
   },
   "ClassNames HOC": {
-    "prefix": "eclnm",
+    "prefix": "ecn",
     "body": [
       "<ClassNames>",
       "\t{({ cx, css }) => ($1)}",
@@ -67,12 +67,12 @@
     "description": "Declared an emotion css style variable with object styles"
   },
   "theme variable with useTheme": {
-    "prefix": "eusetheme",
+    "prefix": "eusthm",
     "body": "const theme = useTheme();",
     "description": "Declare them with useTheme() from emotion"
   },
   "styled component constant": {
-    "prefix": "styledcomp",
+    "prefix": "stc",
     "body": [
       "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
       "\t$1",
@@ -81,7 +81,7 @@
     "description": "Declare styled component"
   },
   "Wrapped custom component in a styled component": {
-    "prefix": "styledwrapcomp",
+    "prefix": "stcwr",
     "body": [
       "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$1)`",
       "\t$1;",
