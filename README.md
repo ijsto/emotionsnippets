@@ -26,34 +26,87 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ## Emotion.js Snippet Contents
 
-|           Trigger | Content                                                   |
-| ----------------: | --------------------------------------------------------- |
-|       `emimpcss→` | Import css from @emotion/core                             |
-|    `emimpstyled→` | Import styled from emotion                                |
-|     `styledcomp→` | Declare styled component                                  |
-| `styledwrapcomp→` | Declare custom component wrapped in a styled component    |
-|         `stprop→` | Universal destructuring of a prop template literal        |
-|     `emimptheme→` | Import useTheme from emotion                              |
-|     `emusetheme→` | Declare them with useTheme() from emotion                 |
-|          `emcss→` | Declared an emotion css style variable                    |
-|       `emobjcss→` | Declared an emotion css style variable with object styles |
-|       `emimpjsx→` | Imports emotion jsx prop                                  |
-|    `emimpjsxcss→` | Imports emotion jsx and css props                         |
+|            Trigger | Content                                                   |
+| -----------------: | --------------------------------------------------------- |
+|       `eimpclnm →` | Import ClassNames from @emotion/core                      |
+|        `eimpcss →` | Import css from @emotion/core                             |
+|        `eimpjsx →` | Imports emotion jsx prop                                  |
+|     `eimpjsxcss →` | Imports emotion jsx and css props                         |
+|     `eimpstyled →` | Import styled from emotion/styled (requires package)      |
+|   `eimpusetheme →` | Import useTheme from emotion-theming (requires package)   |
+|           `ecss →` | Declared an emotion css style variable                    |
+|          `eclnm →` | Creates ClassNames HOC with render props                  |
+|        `eobjcss →` | Declared an emotion css style variable with object styles |
+|      `eusetheme →` | Declare them with useTheme() from emotion-theming         |
+|     `styledcomp →` | Declare styled component                                  |
+| `styledwrapcomp →` | Declare custom component wrapped in a styled component    |
 
 - More snippets to come, stay tuned!
 
 ## Expanded Snippets
 
-### emimpcss - Import css from @emotion/core
+### eimpclnm - Import ClassNames from @emotion/core
+
+```javascript
+import { ClassNames } from "@emotion/core";
+```
+
+### eimpcss - Import css from @emotion/core
 
 ```javascript
 import { css } from "@emotion/core";
 ```
 
-### emimpstyled - Import styled from emotion
+### eimpjsx - Imports emotion jsx prop
+
+```javascript
+// below comment line is required
+// it tells babel how to convert properly
+/** @jsx jsx */
+import { jsx } from "@emotion/core";
+```
+
+### eimpjsxcss - Imports emotion jsx and css props
+
+```javascript
+// below comment line is required
+// it tells babel how to convert properly
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
+```
+
+### eimpstyled - Import styled from emotion/styled (requires package)
 
 ```javascript
 import styled from "@emotion/styled";
+```
+
+### eimpusetheme - Import useTheme from emotion-theming (requires package)
+
+```javascript
+import { useTheme } from "emotion-theming";
+```
+
+### ecss - Declared an emotion css style variable
+
+```javascript
+const style| = css`
+  |
+`;
+```
+
+### eobjcss - Declared an emotion css style variable with object styles
+
+```javascript
+const objectStyles| = css({
+    |
+})
+```
+
+### eusetheme - Declare them with useTheme() from emotion-theming
+
+```javascript
+const theme = useTheme();
 ```
 
 ### styledcomp - Declare styled component
@@ -72,69 +125,34 @@ const StyledComp| = styled(CustomComp|)`
 `;
 ```
 
-### stprop - Import css from @emotion/core
-
-```javascript
-  ${({ | }) => | }
-```
-
-### emimptheme - Import emotion's useTheme
-
-```javascript
-import { useTheme } from "emotion-theming";
-```
-
-### emusetheme - Declare them with useTheme() from emotion
-
-```javascript
-const theme = useTheme();
-```
-
-### emcss - Declared an emotion css style variable
-
-```javascript
-const style| = css`
-  |;
-`;
-```
-
-### emobjcss - Declared an emotion css style variable with object styles
-
-```javascript
-const objectStyles| = css({
-    |,
-})
-```
-
-### emimpjsx - Imports emotion jsx prop
-
-```javascript
-// below comment line is required
-// it tells babel how to convert properly
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
-```
-
-### emimpjsxcss - Imports emotion jsx and css props
-
-```javascript
-// below comment line is required
-// it tells babel how to convert properly
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
-```
-
 ## Release Notes
+
+## [1.0.2] - 2020 March 4rd
+
+### Added
+
+- `eimpclnm →` | Import ClassNames from @emotion/core
+- `eclnm →` | Creates ClassNames HOC with render props
+
+### Changed
+
+- [BREAKING]: Renamed all `em*` snippet instances to `e*`
+
+### Removed
+
+- `stprop →`
+
+## [1.0.1] - 2020 March 3rd
+
+### Changed
+
+- added filename base to styled component definition
 
 ## [1.0.0] - 2020 March 3rd
 
 ### Added
 
 #### Snippets:
-
-- `gip→` | getInitialProps() outside component
-- `ccgip→` | static getInitialProps() inside class component
-- `gipaq→` | NextJS getInitialProps() withApollo() expose query
 
 -       `emimpcss→` | Import css from @emotion/core
 - `emimpstyled→` | Import styled from emotion

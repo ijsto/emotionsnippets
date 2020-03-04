@@ -1,70 +1,16 @@
 {
-  "Import React": {
-    "prefix": "emimpcss",
+  "Import ClassNames": {
+    "prefix": "eimpclnm",
+    "body": ["import { ClassNames } from '@emotion/core';"],
+    "description": "Import ClassNames from @emotion/core"
+  },
+  "Import { css }": {
+    "prefix": "eimpcss",
     "body": ["import { css } from '@emotion/core';"],
     "description": "Import css from @emotion/core"
   },
-
-  "Import emotion styled component": {
-    "prefix": "emimpstyled",
-    "body": ["import styled from '@emotion/styled';"],
-    "description": "Import styled from emotion"
-  },
-  "Declare emotion styled component": {
-    "prefix": "styledcomp",
-    "body": [
-      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
-      "\t$2;",
-      "`"
-    ],
-    "description": "Declare styled component"
-  },
-  "Wrapped custom component in a styled component": {
-    "prefix": "styledwrapcomp",
-    "body": [
-      "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$2)`",
-      "\t$3;",
-      "`"
-    ],
-    "description": "Wrap custom component with emotion styled component"
-  },
-  "Styled component props": {
-    "prefix": "stprop",
-    "body": ["${({$0}) => $1s}"],
-    "description": "Import css from @emotion/core"
-  },
-
-  "Import { useTheme }": {
-    "prefix": "emimptheme",
-    "body": ["import { useTheme } from 'emotion-theming';"],
-    "description": "Import emotion's useTheme"
-  },
-  "theme variable with useTheme": {
-    "prefix": "emusetheme",
-    "body": "const theme = useTheme();",
-    "description": "Declare them with useTheme() from emotion"
-  },
-
-  "css style definition": {
-    "prefix": "emcss",
-    "body": [
-      "const style$0 = css`",
-      "\t$1;",
-      "`"
-    ],
-    "description": "Declared an emotion css style variable"
-  },
-  "css styles object definition": {
-    "prefix": "emobjcss",
-    "body": [
-      "const objectStyles$0 = css({",
-      "\t$1,",
-      "})"
-    ],
-    "description": "Declared an emotion css style variable with object styles"
-  },
-  "jsx prop": {
-    "prefix": "emimpjsx",
+  "Import jsx prop": {
+    "prefix": "eimpjsx",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -73,8 +19,8 @@
     ],
     "description": "Imports emotion jsx prop"
   },
-  "jsx with css props": {
-    "prefix": "emimpjsxcss",
+  "Import jsx with css props": {
+    "prefix": "eimpjsxcss",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -82,5 +28,65 @@
       "import { jsx, css } from '@emotion/core'"
     ],
     "description": "Imports emotion jsx and css props"
+  },
+  "Import styled from emotion": {
+    "prefix": "eimpstyled",
+    "body": ["import styled from '@emotion/styled';"],
+    "description": "Import styled from emotion"
+  },
+  "Import { useTheme }": {
+    "prefix": "eimpusetheme",
+    "body": ["import { useTheme } from 'emotion-theming';"],
+    "description": "Import useTheme emotion-theming"
+  },
+  "ClassNames HOC": {
+    "prefix": "eclnm",
+    "body": [
+      "<ClassNames>",
+      "\t{({ cx, css }) => ($1)}",
+      "</ClassNames"
+    ],
+    "description": "Creates ClassNames HOC with render props"
+  },
+  "css style constant": {
+    "prefix": "ecss",
+    "body": [
+      "const style$0 = css`",
+      "\t$1",
+      "`"
+    ],
+    "description": "Declared an emotion css style variable"
+  },
+  "css styles object definition": {
+    "prefix": "eobjcss",
+    "body": [
+      "const objectStyles$0 = css({",
+      "\t$1",
+      "})"
+    ],
+    "description": "Declared an emotion css style variable with object styles"
+  },
+  "theme variable with useTheme": {
+    "prefix": "eusetheme",
+    "body": "const theme = useTheme();",
+    "description": "Declare them with useTheme() from emotion"
+  },
+  "styled component constant": {
+    "prefix": "styledcomp",
+    "body": [
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
+      "\t$1",
+      "`"
+    ],
+    "description": "Declare styled component"
+  },
+  "Wrapped custom component in a styled component": {
+    "prefix": "styledwrapcomp",
+    "body": [
+      "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$1)`",
+      "\t$1;",
+      "`"
+    ],
+    "description": "Wrap custom component with emotion styled component"
   }
 }
