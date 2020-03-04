@@ -1,16 +1,16 @@
 {
   "Import ClassNames": {
-    "prefix": "eicn",
+    "prefix": "imecn",
     "body": ["import { ClassNames } from '@emotion/core';"],
     "description": "Import ClassNames from @emotion/core"
   },
   "Import { css }": {
-    "prefix": "eicss",
+    "prefix": "imecss",
     "body": ["import { css } from '@emotion/core';"],
     "description": "Import css from @emotion/core"
   },
   "Import jsx prop": {
-    "prefix": "eij",
+    "prefix": "imej",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -20,7 +20,7 @@
     "description": "Imports emotion jsx prop"
   },
   "Import jsx with css props": {
-    "prefix": "eijcss",
+    "prefix": "imejcss",
     "body": [
       "// below comment line is required",
       "// it tells babel how to convert properly",
@@ -30,12 +30,12 @@
     "description": "Imports emotion jsx and css props"
   },
   "Import styled from emotion": {
-    "prefix": "eistc",
+    "prefix": "imesc",
     "body": ["import styled from '@emotion/styled';"],
     "description": "Import styled from emotion"
   },
   "Import { useTheme }": {
-    "prefix": "eiusthm",
+    "prefix": "imeusthm",
     "body": ["import { useTheme } from 'emotion-theming';"],
     "description": "Import useTheme emotion-theming"
   },
@@ -72,7 +72,7 @@
     "description": "Declare them with useTheme() from emotion"
   },
   "styled component constant": {
-    "prefix": "stc",
+    "prefix": "sc",
     "body": [
       "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
       "\t$1",
@@ -81,7 +81,7 @@
     "description": "Declare styled component"
   },
   "Wrapped custom component in a styled component": {
-    "prefix": "stcwr",
+    "prefix": "scw",
     "body": [
       "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$1)`",
       "\t$1;",

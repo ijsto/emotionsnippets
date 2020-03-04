@@ -26,38 +26,38 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ## Emotion.js Snippet Contents
 
-|     Trigger | Content                                                   |
-| ----------: | --------------------------------------------------------- |
-|    `eicn →` | Import ClassNames from @emotion/core                      |
-|   `eicss →` | Import css from @emotion/core                             |
-|     `eij →` | Imports emotion jsx prop                                  |
-|  `eijcss →` | Imports emotion jsx and css props                         |
-|   `eistc →` | Import styled from emotion/styled (requires package)      |
-| `eiusthm →` | Import useTheme from emotion-theming (requires package)   |
-|    `ecss →` | Declared an emotion css style variable                    |
-|     `ecn →` | Creates ClassNames HOC with render props                  |
-| `eobjcss →` | Declared an emotion css style variable with object styles |
-|  `eusthm →` | Declare them with useTheme() from emotion-theming         |
-|     `stc →` | Declare styled component                                  |
-|   `stcwr →` | Declare custom component wrapped in a styled component    |
+|      Trigger | Content                                                   |
+| -----------: | --------------------------------------------------------- |
+|     `ecss →` | Declared an emotion css style variable                    |
+|      `ecn →` | Creates ClassNames HOC with render props                  |
+|  `eobjcss →` | Declared an emotion css style variable with object styles |
+|   `eusthm →` | Declare them with useTheme() from emotion-theming         |
+|    `imecn →` | Import ClassNames from @emotion/core                      |
+|   `imecss →` | Import css from @emotion/core                             |
+|     `imej →` | Imports emotion jsx prop                                  |
+|  `imejcss →` | Imports emotion jsx and css props                         |
+|    `imesc →` | Import styled from emotion/styled (requires package)      |
+| `imeusthm →` | Import useTheme from emotion-theming (requires package)   |
+|       `sc →` | Declare styled component                                  |
+|      `scw →` | Declare custom component wrapped in a styled component    |
 
 - More snippets to come, stay tuned!
 
 ## Expanded Snippets
 
-### eicn - Import ClassNames from @emotion/core
+### imecn - Import ClassNames from @emotion/core
 
 ```javascript
 import { ClassNames } from "@emotion/core";
 ```
 
-### eicss - Import css from @emotion/core
+### imecss - Import css from @emotion/core
 
 ```javascript
 import { css } from "@emotion/core";
 ```
 
-### eij - Imports emotion jsx prop
+### imej - Imports emotion jsx prop
 
 ```javascript
 // below comment line is required
@@ -66,7 +66,7 @@ import { css } from "@emotion/core";
 import { jsx } from "@emotion/core";
 ```
 
-### eijcss - Imports emotion jsx and css props
+### imejcss - Imports emotion jsx and css props
 
 ```javascript
 // below comment line is required
@@ -75,13 +75,13 @@ import { jsx } from "@emotion/core";
 import { jsx, css } from "@emotion/core";
 ```
 
-### eistc - Import styled from emotion/styled (requires package)
+### imesc - Import styled from emotion/styled (requires package)
 
 ```javascript
 import styled from "@emotion/styled";
 ```
 
-### eiusthm - Import useTheme from emotion-theming (requires package)
+### imeusthm - Import useTheme from emotion-theming (requires package)
 
 ```javascript
 import { useTheme } from "emotion-theming";
@@ -109,23 +109,29 @@ const objectStyles| = css({
 const theme = useTheme();
 ```
 
-### stc - Declare styled component
+### sc - Declare styled component
 
 ```javascript
-const stc| = styled.div`
+const sc| = styled.div`
   |
 `;
 ```
 
-### stcwr - Wrap custom component with emotion styled component
+### scw - Wrap custom component with emotion styled component
 
 ```javascript
-const stc| = styled(CustomComp|)`
+const sc| = styled(CustomComp|)`
   |
 `;
 ```
 
 ## Release Notes
+
+## [1.1.2] - 2020 March 4rd
+
+### Changed
+
+- [BREAKING]: Final renaming of base snippets
 
 ## [1.1.1] - 2020 March 4rd
 
@@ -168,8 +174,8 @@ const stc| = styled(CustomComp|)`
 
 -       `emimpcss→` | Import css from @emotion/core
 - `emimpstyled→` | Import styled from emotion
--     `stc→` | Declare styled component
-- `stcwr→` | Declare custom component wrapped in a styled component
+-     `sc→` | Declare styled component
+- `scw→` | Declare custom component wrapped in a styled component
 -         `stprop→` | Universal destructuring of a prop template literal
 -     `emimptheme→` | Import useTheme from emotion
 -     `emusetheme→` | Declare them with useTheme() from emotion
