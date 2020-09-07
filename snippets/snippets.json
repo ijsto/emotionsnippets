@@ -83,8 +83,8 @@
   "Wrapped custom component in a styled component": {
     "prefix": "scw",
     "body": [
-      "const Styled${1:${TM_FILENAME_BASE}} = styled(CustomComp$1)`",
-      "\t$1;",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled($1)`",
+      "\t;",
       "`"
     ],
     "description": "Wrap custom component with emotion styled component"
